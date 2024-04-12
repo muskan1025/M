@@ -1,0 +1,172 @@
+/* Custom CSS Variables */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button, input[type="submit"] {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+button:focus, input[type="submit"]:focus {
+  box-shadow: none;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.bg-light {
+  background-color: var(--light-color);
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-weight: bold;
+  color: var(--dark-color);
+  margin-bottom: 2rem;
+}
+
+/* Navbar Styles */
+.navbar {
+  padding: 0.5rem 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--dark-color);
+  padding: 0 0.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Hero Styles */
+.hero {
+  background-image: url('assets/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Features Styles */
+.features {
+  background-color: var(--light-color);
+  padding: 3rem 0;
+}
+
+.features .row .col-md-4 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.features .row .col-md-4 i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.features .row .col-md-4 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.features .row .col-md-4 p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Portfolio Styles */
+#portfolio .card {
+  transition: transform 0.3s ease-in-out;
+}
+
+#portfolio .card:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Styles */
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact form .form-control {
+  margin-bottom: 1rem;
+}
+
+#contact form button[type="submit"] {
+  width: 100%;
+}
